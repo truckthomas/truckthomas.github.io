@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jazz Hot 1966–1976 · Projet DH</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+    color: #1f2328;
+    background: #fff;
+    margin: 0;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  .container {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d1d9e0;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 32px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d1d9e0;
+  }
+  p { margin: 8px 0; }
+  a { color: #0969da; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code {
+    background: #eff1f3;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .subtitle {
+    color: #656d76;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .card {
+    border: 1px solid #d1d9e0;
+    border-radius: 6px;
+    padding: 20px;
+    background: #f6f8fa;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: #0969da; }
+  .card h3 { margin: 0 0 6px; font-size: 16px; font-weight: 600; }
+  .card p { margin: 4px 0 0; font-size: 14px; color: #656d76; }
+  .card .tag {
+    display: inline-block;
+    font-size: 12px;
+    padding: 1px 8px;
+    border-radius: 12px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  .tag-public { background: #ddf4ff; color: #0969da; }
+  .tag-private { background: #fff3cd; color: #9a6700; }
+  .tag-app { background: #dcffe4; color: #1a7f37; }
+  .carto-banner {
+    display: block;
+    border: 1px solid #d1d9e0;
+    border-radius: 6px;
+    padding: 28px 24px;
+    background: linear-gradient(135deg, #f6f8fa 0%, #eef1f5 100%);
+    margin: 20px 0;
+    text-align: center;
+    transition: border-color 0.2s;
+  }
+  .carto-banner:hover { border-color: #0969da; text-decoration: none; }
+  .carto-banner h3 { font-size: 20px; margin: 0 0 6px; }
+  .carto-banner p { color: #656d76; margin: 0; font-size: 15px; }
+  .carto-banner .arrow { font-size: 24px; margin-top: 10px; display: block; color: #0969da; }
+  ul { padding-left: 24px; }
+  li { margin: 4px 0; }
+  .placeholder {
+    background: #f6f8fa;
+    border: 1px dashed #d1d9e0;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 12px 0;
+    color: #656d76;
+    font-style: italic;
+    font-size: 14px;
+  }
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #d1d9e0;
+    font-size: 13px;
+    color: #656d76;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Jazz Hot 1966–1976</h1>
+  <p class="subtitle">Cartographie de la circulation des musiciens de jazz en Europe,
+    à partir du dépouillement computationnel du magazine <em>Jazz Hot</em>.</p>
+
+  <a class="carto-banner" href="cartographie/">
+    <h3>Explorer la cartographie interactive</h3>
+    <p>Villes · Routes · Free Jazz · Base de données</p>
+    <span class="arrow">→</span>
+  </a>
+
+  <h2>Dépôts</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3><a href="https://github.com/truckthomas/FONDUE-JAZZHOT-20TH-PRINT-ZINE">FONDUE-JAZZHOT-20TH-PRINT-ZINE</a></h3>
+      <p>Données d'entraînement HTR et modèle CATMuS-JH pour la transcription automatique de Jazz Hot.</p>
+      <span class="tag tag-public">public</span>
+    </div>
+    <div class="card">
+      <h3><a href="https://github.com/truckthomas/truckthomas.github.io">truckthomas.github.io</a></h3>
+      <p>Site vitrine du projet : cartographie interactive, base de données, documentation.</p>
+      <span class="tag tag-app">GitHub Pages</span>
+    </div>
+    <!--
+    <div class="card">
+      <h3><a href="#">jazzhot-extraction</a></h3>
+      <p>Scripts Python d'extraction des concerts depuis les fichiers ALTO XML.</p>
+      <span class="tag tag-public">public</span>
+    </div>
+    <div class="card">
+      <h3><a href="#">jazzhot-data</a></h3>
+      <p>Base de données CSV normalisée, scripts de nettoyage et d'enrichissement.</p>
+      <span class="tag tag-private">privé</span>
+    </div>
+    -->
+  </div>
+
+  <h2>Projet</h2>
+  <div class="placeholder">
+    Décrivez ici le contexte de votre recherche : cadre institutionnel (Université de Genève, certificat en humanités numériques),
+    direction scientifique, questions de recherche, dialogue avec les travaux existants.
+  </div>
+
+  <h2>Pipeline</h2>
+  <ol>
+    <li><strong>Numérisation & OCR</strong> — Scans de <em>Jazz Hot</em> (1966–1976), transcription via modèle HTR Kraken (CATMuS-JH)</li>
+    <li><strong>Extraction</strong> — Scripts Python par année, regex sur ALTO XML, gestion des erreurs OCR</li>
+    <li><strong>Normalisation</strong> — Géocodage (Nominatim), identifiants Wikidata, classification par genre et nationalité</li>
+    <li><strong>Nettoyage</strong> — Vérification manuelle, correction des coordonnées, harmonisation des noms</li>
+    <li><strong>Visualisation</strong> — Cartes Leaflet, agrégation par ville, calcul des circulations</li>
+  </ol>
+
+  <h2>Publications & liens</h2>
+  <ul>
+    <li><a href="https://github.com/truckthomas/FONDUE-JAZZHOT-20TH-PRINT-ZINE">Modèle HTR CATMuS-JH sur GitHub</a></li>
+    <!-- <li><a href="https://doi.org/10.5281/zenodo.XXXXX">Données et modèle sur Zenodo</a></li> -->
+    <!-- <li><a href="#">Article soumis à Humanistica DH</a></li> -->
+  </ul>
+  <div class="placeholder">Ajoutez ici vos liens vers Zenodo, publications, présentations.</div>
+
+  <footer>
+    Thomas Gauffroy-Naudin · Université de Genève · Humanités numériques · 2025–2026
+  </footer>
+
+</div>
+</body>
+</html>
